@@ -4,7 +4,7 @@ A python program that handles a website link form the user, and turns it into a 
 
 ##  How to use
 
-Download the libraries used, you can find then in 'requirements.txt'.
+Download the libraries used, you can find them in 'requirements.txt'.
 Run code in terminal by typing 'python main.py' for windows.
 
 
