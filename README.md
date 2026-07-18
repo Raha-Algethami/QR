@@ -1,11 +1,12 @@
-#  Qr code generator- using the qrcode library
+#  Qr code generator Engine- using the qrcode library
 
-A python program that handles a website link form the user, and turns it into a qr code png file in seconds.
+A lightning fast. terminal based python application that handles a website link form the user, and instantly turn it into a scannable qr code png file in seconds,this tool is designed to be reliable, scalable, and easy to read.
 
 ##  How to use
 
-Download the libraries used, you can find then in 'requirements.txt'.
-Run code in terminal by typing 'python main.py' for windows.
+1. **Installations:** Ensure you have the required libraries included the file `requirements.txt`. (You can install them by running `pip install -r requirements.txt` in your terminal).
+2. **Running the program:** in your terminal type:
+   `python main.py`
 
 
 ##  Features

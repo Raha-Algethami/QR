@@ -1,5 +1,13 @@
 import input
 import QR_generator
 
-url = input.getURL()
-QR_generator.Make_qr(url)
+
+url_list = input.getURL()
+count = 1
+
+for link in url_list:
+    link = link.strip()  # strips the \n character
+    file_name = f"QR_{count}.png"
+
+    QR_generator.Make_qr(link, file_name)
+    count += 1

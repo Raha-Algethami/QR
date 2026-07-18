@@ -3,6 +3,13 @@ def getURL():
     name = input('Name:')
 
     print(f"Welcome back {name}!!!\n")
-    URL = input("Enter the URL to generate your QR code-->")
 
-    return URL
+    file = open('links.txt', 'r')
+    urls = file.readlines()
+    file.close()
+
+    print("Your links--> ", end="")
+    for line in urls:
+        print(line.strip(), "\n")
+
+    return urls

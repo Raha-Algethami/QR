@@ -1,8 +1,8 @@
 import qrcode
 
 
-def Make_qr(URL):
+def Make_qr(URL, file_name):
     img = qrcode.make(URL)
-    img.save('qr.png')
+    img.save(file_name)
 
-    print("QR code generated successfully!!")
+    print(f"{file_name} QR code generated successfully!!")
