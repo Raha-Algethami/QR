@@ -2,12 +2,15 @@ import input
 import QR_generator
 
 
-url_list = input.getURL()
-count = 1
+data_list = input.getData()
 
-for link in url_list:
-    link = link.strip()  # strips the \n character
-    file_name = f"QR_{count}.png"
 
-    QR_generator.Make_qr(link, file_name)
-    count += 1
+for line in data_list:
+    line = line.strip()  # strips the \n character
+    strings = line.split(",")
+    name = strings[0]
+    url = strings[1]
+
+    file_name = f"{name}_QR.png"
+
+    QR_generator.Make_qr(url, file_name)
