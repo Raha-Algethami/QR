@@ -51,4 +51,4 @@ QR
 
 Computer Engineering Student  
 Taif University  
-Saudi Arabia 🇸🇦
+Saudi Arabia
