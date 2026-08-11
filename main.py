@@ -2,16 +2,16 @@ import input
 from QRuser import QRuser
 import os
 
-
 data_list = input.getData()
 os.makedirs("output", exist_ok=True)
 
 user = QRuser("name")
 
-user.Make_qr("cisco.com", "cisco")
-user.Make_qr("iherb.com", "iherb")
-
 for line in data_list:
-    name, url = line.strip().split(",")
-    user.Make_qr(url.strip(), name.strip())
+    line = line.strip()
+    if not line or "," not in line:
+        continue
+    name, url = line.split(",", 1)
+    user.Make_qr(url.strip(), f"output/{name.strip()}.png")
+
 user.summary()
